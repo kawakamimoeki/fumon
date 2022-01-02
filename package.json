@@ -1,0 +1,22 @@
+{
+  "name": "fumon",
+  "version": "1.0.0",
+  "description": "",
+  "module": "dist/fumon.esm.min.js",
+  "browser": "dist/fumon.umd.min.js",
+  "main": "dist/fumon.min.js",
+  "author": "moekidev",
+  "license": "MIT",
+  "engines": {
+    "node": "16.x"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "demos": "yarn build && yarn run vite ./demos"
+  },
+  "devDependencies": {
+    "rollup": "^2.62.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "vite": "^2.7.10"
+  }
+}
